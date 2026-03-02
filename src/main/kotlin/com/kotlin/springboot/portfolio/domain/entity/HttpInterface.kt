@@ -4,7 +4,7 @@ import jakarta.persistence.*
 import jakarta.servlet.http.HttpServletRequest
 
 @Entity
-class HttpInterface(httpServletRequest: HttpServletRequest): BaseEntity() {
+class HttpInterface(httpServletRequest: HttpServletRequest) : BaseEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,6 +26,4 @@ class HttpInterface(httpServletRequest: HttpServletRequest): BaseEntity() {
     var requestUri: String? = httpServletRequest.requestURI
 
     var userAgent: String? = httpServletRequest.getHeader("user-agent")
-
-
 }
