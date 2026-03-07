@@ -1,3 +1,8 @@
 package com.kotlin.springboot.portfolio.presentation.dto
 
-class AchievementDTO
+data class AchievementDTO(
+    val title: String,
+    val description: String,
+    val host: String,
+    val achievedDate: String?
+)
