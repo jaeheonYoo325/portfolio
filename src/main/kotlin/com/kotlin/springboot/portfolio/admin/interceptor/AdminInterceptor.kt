@@ -19,8 +19,8 @@ class AdminInterceptor : HandlerInterceptor {
             MenuDTO(
                 name = "Index",
                 pages = listOf<PageDTO>(
-                    PageDTO(name = "Introduction", url = "/admin/Introduction"),
-                    PageDTO(name = "Link", url = "/admin/link"),
+                    PageDTO(name = "Introduction", url = "/admin/introduction"),
+                    PageDTO(name = "Link", url = "/admin/link")
                 )
             ),
             MenuDTO(
@@ -42,4 +42,5 @@ class AdminInterceptor : HandlerInterceptor {
 
         modelAndView?.model?.put("menus", menus)
     }
+
 }
