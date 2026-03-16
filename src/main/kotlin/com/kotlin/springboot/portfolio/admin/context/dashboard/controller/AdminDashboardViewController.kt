@@ -24,9 +24,9 @@ class AdminDashboardViewController(
         val today = adminDashboardService.countVisitorsToday()
 
         val visitors = listOf(
-            VisitorsDTO(name = "Total", count = total, color = "#4154f1", background = "#f6f6fe"),
-            VisitorsDTO(name = "Weekly", count = weekly, color = "#2eca6a", background = "#e0f8e9"),
-            VisitorsDTO(name = "Today", count = today, color = "#ff771d", background = "#ffecdf")
+            VisitorsDTO(name = "Total", count = total),
+            VisitorsDTO(name = "Weekly", count = weekly),
+            VisitorsDTO(name = "Today", count = today)
         )
         model.addAttribute("visitors", visitors)
 
